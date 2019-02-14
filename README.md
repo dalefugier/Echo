@@ -6,7 +6,10 @@ This simple WCF example demonstrate an error that occurs in Mono on macOS.
 If a WCF server, running on Windows, throws a `FaultException` that contains a `FaultCode` to a WCF client, running on macOS, the following `CommunicationException` is caught, not the expected `FaultException`.
 
 ```
-{System.ServiceModel.CommunicationException: Received an invalid SOAP Fault message ---> System.Xml.XmlException: Content cannot be converted to the type System.Xml.XmlQualifiedName. Line 1, position 78. ---> System.FormatException: The ':' character, hexadecimal value 0x3A, cannot be included in a name.
+{System.ServiceModel.CommunicationException: Received an invalid SOAP Fault message ---
+> System.Xml.XmlException: Content cannot be converted to the type
+System.Xml.XmlQualifiedName. Line 1, position 78. ---> System.FormatException: The ':'
+character, hexadecimal value 0x3A, cannot be included in a name.
 ```
 Note, if the same WCF server throws a `FaultException` without a `FaultCode`, the same WCF client will catch the `FaultException` as expected.
 
