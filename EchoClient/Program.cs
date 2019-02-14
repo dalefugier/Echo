@@ -41,8 +41,8 @@ namespace EchoClient
         Console.WriteLine(rc);
 
         // This works on Windows and Mac
-        rc = channel.Echo1("");
-        Console.WriteLine(rc);
+        //rc = channel.Echo1("");
+        //Console.WriteLine(rc);
 
         // This works on Windows
         // This does not work on Mac
