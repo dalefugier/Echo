@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoServer", "EchoServer\EchoServer.csproj", "{6DCF91EA-96CF-40A6-99FA-0F1592EF1DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoClient", "EchoClient\EchoClient.csproj", "{666D093A-F835-4281-B850-7315EDFFE23D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoLibrary", "EchoLibrary\EchoLibrary.csproj", "{845A6BBE-5893-41D8-82B1-93B969E025F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DCF91EA-96CF-40A6-99FA-0F1592EF1DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCF91EA-96CF-40A6-99FA-0F1592EF1DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCF91EA-96CF-40A6-99FA-0F1592EF1DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCF91EA-96CF-40A6-99FA-0F1592EF1DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{666D093A-F835-4281-B850-7315EDFFE23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{666D093A-F835-4281-B850-7315EDFFE23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{666D093A-F835-4281-B850-7315EDFFE23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{666D093A-F835-4281-B850-7315EDFFE23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845A6BBE-5893-41D8-82B1-93B969E025F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845A6BBE-5893-41D8-82B1-93B969E025F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845A6BBE-5893-41D8-82B1-93B969E025F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845A6BBE-5893-41D8-82B1-93B969E025F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC3F110A-C3CB-434D-AE39-3F31C995D579}
+	EndGlobalSection
+EndGlobal
