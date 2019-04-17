@@ -55,17 +55,14 @@ namespace EchoClient
       }
       catch (CommunicationException ex)
       {
-        Console.WriteLine(nameof(ex));
         Console.WriteLine(ex);
       }
       catch (TimeoutException ex)
       {
-        Console.WriteLine(nameof(ex));
         Console.WriteLine(ex);
       }
       catch (Exception ex)
       {
-        Console.WriteLine(nameof(ex));
         Console.WriteLine(ex);
       }
 
