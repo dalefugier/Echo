@@ -28,9 +28,9 @@ To demonstrate the error:
 
 1. Clone the repository on both Windows and macOS.
 
-2. Build a **Release** build of the solution on Windows and then run **EchoServer.exe**. Note, you might need to open TCP Port 80 for incoming traffic in the Windows Firewall.
+2. Build a **Release** build of the solution on **Windows** and then run **EchoServer.exe**. Note, you might need to open TCP Port 80 for incoming traffic in the Windows Firewall.
 
-3. Build a **Debug** build of the solution on macOS and then debug the **EchoClient** project. This is a console utility that sends a simple string to **EchoServer**. 
+3. Build a **Debug** build of the solution on **macOS** and then debug the **EchoClient** project. This is a console utility that sends a simple string to **EchoServer**. 
 
 4. For easy debugging, add the host name or IP address of the system running **EchoServer** in the project's run arguments (*EchoClient > Option > Default > Arguments*).
 
