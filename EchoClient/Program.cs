@@ -21,13 +21,13 @@ namespace EchoClient
       if (string.IsNullOrEmpty(host_name))
         return Syntax();
 
-      var message = string.Format("Hello from {0}!", Environment.MachineName);
+      var message = $"Hello from {Environment.MachineName}!";
 
       IEchoService channel = null;
       try
       {
         var binding = new BasicHttpBinding();
-        var uri = string.Format("http://{0}:80/echo/basic", host_name);
+        var uri = $"http://{host_name}:80/echo/basic";
         var endpoint = new EndpointAddress(uri);
         var factory = new ChannelFactory<IEchoService>(binding, endpoint);
         channel = factory.CreateChannel();
@@ -52,7 +52,6 @@ namespace EchoClient
       catch (FaultException ex)
       {
         Console.WriteLine(FaultExceptionMessage(ex));
-        //Console.WriteLine(ex);
       }
       catch (CommunicationException ex)
       {
@@ -92,7 +91,7 @@ namespace EchoClient
       string rc = null;
       if (!string.IsNullOrEmpty(ex.Code.Name))
       {
-        if (Int32.TryParse(ex.Code.Name, out var code))
+        if (int.TryParse(ex.Code.Name, out var code))
         {
           switch ((StringFault)code)
           {
@@ -120,7 +119,7 @@ namespace EchoClient
     /// </summary>
     private static int Syntax()
     {
-      System.Console.WriteLine("Usage: EchoClient <hostname or ipaddress> <message to echo>");
+      Console.WriteLine("Usage: EchoClient <hostname or ipaddress> <message to echo>");
       return 1;
     }
   }

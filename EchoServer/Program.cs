@@ -8,12 +8,12 @@ namespace EchoServer
   /// <summary>
   /// Simple WCF service
   /// </summary>
-  class Program
+  internal class Program
   {
     /// <summary>
     /// Program entry point
     /// </summary>
-    static void Main(string[] args)
+    static void Main()
     {
       var base_address = new Uri("http://localhost:80/echo/");
       var service_host = new ServiceHost(typeof(EchoService), base_address);
@@ -73,7 +73,7 @@ namespace EchoServer
       if (string.IsNullOrEmpty(message))
         throw new FaultException("String is null or empty.");
 
-      var rc = string.Format("Echo1 - {0}", message);
+      var rc = $"Echo1 - {message}";
       Console.WriteLine(rc);
       return rc;
     }
@@ -102,7 +102,7 @@ namespace EchoServer
         throw new FaultException("String is whitespace.", code);
       }
 
-      var rc = string.Format("Echo2 - {0}", message);
+      var rc = $"Echo2 - {message}";
       Console.WriteLine(rc);
       return rc;
     }
