@@ -16,7 +16,12 @@ Note, if the same WCF server throws a `FaultException` without a `FaultCode`, th
 I've tested this with:
 
 - Microsoft Visual Studio for Mac (Community) - Version 8.0.3 (build 14)
-- Mono Framework MDK - Mono 5.18.1.3 (2018-08/fdb26b0a445) (64-bit)
+- Mono Framework MDK - 5.16.0.220, and Mono 5.18.1.3, (64-bit)
+
+and:
+
+- Microsoft Visual Studio for Mac (Community) - Version 8.0.4 (build 0)
+- Mono Framework MDK - 5.18.1.3, and Mono 5.20.1.19, (64-bit)
 
 Note, this worked in (much) earlier versions of Mono. I've tested against Version 4.0.2.
 
